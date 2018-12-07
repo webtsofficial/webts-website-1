@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+// Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Bungee|Open+Sans:300,300i,400,400i,600,700,800');
+// Variables
+@import "styles/variables/colors";
+@import "styles/variables/fonts";
+// Mixins
+@import "styles/mixins/flex";
+@import "styles/mixins/media_queries";
+@import "styles/mixins/opacity";
+@import "styles/mixins/shadows";
+@import "styles/mixins/transform";
+@import "styles/mixins/transition";
+// Reset
+@import "styles/general/reset";
+// Generals
+@import "styles/general/fonts";
+
+//------------------------------------------------------------------------------------------------------------------------------------
+

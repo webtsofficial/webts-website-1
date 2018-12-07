@@ -1,0 +1,151 @@
+// Matrix
+@mixin matrix($num, $num2: '') {}
+
+// Rotate -------------------------
+@mixin rotate($angleX, $angleY: '') {
+  -webkit-transform: rotateX($angleX, unquote($angleY));
+  -moz-transform: rotateX($angleX, unquote($angleY));
+  -ms-transform: rotateX($angleX, unquote($angleY));
+  -o-transform: rotateX($angleX, unquote($angleY));
+  transform: rotateX($angleX, unquote($angleY));
+}
+@mixin rotateX($angle) {
+  -webkit-transform: rotateX($angle);
+  -moz-transform: rotateX($angle);
+  -ms-transform: rotateX($angle);
+  -o-transform: rotateX($angle);
+  transform: rotateX($angle);
+}
+@mixin rotateY($angle) {
+  -webkit-transform: rotateY($angle);
+  -moz-transform: rotateY($angle);
+  -ms-transform: rotateY($angle);
+  -o-transform: rotateY($angle);
+  transform: rotateY($angle);
+}
+
+// Rotate3d + Z
+@mixin rotate3d($x, $y, $z, $angle) {
+  -webkit-transform: rotate3d($x, $y, $z, $angle);
+  -moz-transform: rotate3d($x, $y, $z, $angle);
+  -ms-transform: rotate3d($x, $y, $z, $angle);
+  -o-transform: rotate3d($x, $y, $z, $angle);
+  transform: rotate3d($x, $y, $z, $angle);
+}
+@mixin rotateZ($angle) {
+  -webkit-transform: rotateZ($angle);
+  -moz-transform: rotateZ($angle);
+  -ms-transform: rotateZ($angle);
+  -o-transform: rotateZ($angle);
+  transform: rotateZ($angle);
+}
+
+// Scaling -------------------------
+@mixin scale($x, $y: '') {
+  -webkit-transform: scale($x, unquote($y));
+  -moz-transform: scale($x, unquote($y));
+  -ms-transform: scale($x, unquote($y));
+  -o-transform: scale($x, unquote($y));
+  transform: scale($x, unquote($y));
+}
+@mixin scaleX($x) {
+  -webkit-transform: scaleX($x);
+  -moz-transform: scaleX($x);
+  -ms-transform: scaleX($x);
+  -o-transform: scaleX($x);
+  transform: scaleX($x);
+}
+@mixin scaleY($y) {
+  -webkit-transform: scaleY($y);
+  -moz-transform: scaleY($y);
+  -ms-transform: scaleY($y);
+  -o-transform: scaleY($y);
+  transform: scaleY($y);
+}
+
+// Scale3d + Z
+@mixin scale3d($x, $y, $z) {
+  -webkit-transform: scaleY($x, $y, $z);
+  -moz-transform: scaleY($x, $y, $z);
+  -ms-transform: scaleY($x, $y, $z);
+  -o-transform: scaleY($x, $y, $z);
+  transform: scaleY($x, $y, $z);
+}
+@mixin scaleZ($z) {
+  -webkit-transform: scaleZ($z);
+  -moz-transform: scaleZ($z);
+  -ms-transform: scaleZ($z);
+  -o-transform: scaleZ($z);
+  transform: scaleZ($z);
+}
+
+// Translate -------------------------
+@mixin translate($x, $y: '') {
+  -webkit-transform: translate($x, unquote($y));
+  -moz-transform: translate($x, unquote($y));
+  -ms-transform: translate($x, unquote($y));
+  -o-transform: translate($x, unquote($y));
+  transform: translate($x, unquote($y));
+}
+@mixin translateX($x) {
+  -webkit-transform: translateX($x);
+  -moz-transform: translateX($x);
+  -ms-transform: translateX($x);
+  -o-transform: translateX($x);
+  transform: translateX($x);
+}
+@mixin translateY($y) {
+  -webkit-transform: translateY($y);
+  -moz-transform: translateY($y);
+  -ms-transform: translateY($y);
+  -o-transform: translateY($y);
+  transform: translateY($y);
+}
+
+// Translate3d + Z
+@mixin translate3d($per, $per2, $length) {
+  -webkit-transform: translate3d($per, $per2, $length);
+  -moz-transform: translate3d($per, $per2, $length);
+  -ms-transform: translate3d($per, $per2, $length);
+  -o-transform: translate3d($per, $per2, $length);
+  transform: translate3d($per, $per2, $length);
+}
+@mixin translateZ($z) {
+  -webkit-transform: translateZ($z);
+  -moz-transform: translateZ($z);
+  -ms-transform: translateZ($z);
+  -o-transform: translateZ($z);
+  transform: translateZ($z);
+}
+
+// Skew ------------------------------
+@mixin skew($angleX, $angleY: '') {
+  -webkit-transform: skew($angleX, unquote($angleY));
+  -moz-transform: skew($angleX, unquote($angleY));
+  -ms-transform: skew($angleX, unquote($angleY));
+  -o-transform: skew($angleX, unquote($angleY));
+  transform: skew($angleX, unquote($angleY));
+}
+@mixin skewX($x) {
+  -webkit-transform: skewX($x);
+  -moz-transform: skewX($x);
+  -ms-transform: skewX($x);
+  -o-transform: skewX($x);
+  transform: skewX($x);
+}
+@mixin skewY($y) {
+  -webkit-transform: skewY($y);
+  -moz-transform: skewY($y);
+  -ms-transform: skewY($y);
+  -o-transform: skewY($y);
+  transform: skewY($y);
+}
+
+// Perspective -----------------------
+@mixin perspective($length) {
+  -webkit-transform: perspective($length);
+  -moz-transform: perspective($length);
+  -ms-transform: perspective($length);
+  -o-transform: perspective($length);
+  transform: perspective($length);
+}
