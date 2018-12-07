@@ -1,3 +1,23 @@
-<p>
-  main-navigation works!
-</p>
+<header>
+  <nav>
+    <ul>
+      <li>
+        <a routerLink="/" [class.active]="activeUrl === '/'">Home</a>
+      </li>
+      <li>
+        <a routerLink="/technologies" [class.active]="activeUrl === '/technologies'">Technologies</a>
+      </li>
+      <li>
+        <a routerLink="/" class="logo-link">
+          <img src="../../../../../assets/images/logos/web-ts-logo-white.svg">
+        </a>
+      </li>
+      <li>
+        <a routerLink="/references" [class.active]="activeUrl === '/references'">References</a>
+      </li>
+      <li>
+        <a routerLink="/contact" [class.active]="activeUrl === '/contact'">Contact</a>
+      </li>
+    </ul>
+  </nav>
+</header>

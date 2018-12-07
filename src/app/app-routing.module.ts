@@ -6,10 +6,11 @@ import {DataSecurityComponent} from './components/sites/data-security/data-secur
 import {ImpressComponent} from './components/sites/impress/impress.component';
 import {ContactComponent} from './components/sites/contact/contact.component';
 import {ReferencesComponent} from './components/sites/references/references.component';
+import {TechnologiesComponent} from './components/sites/technologies/technologies.component';
 
 const routes: Routes = [
     {path: '', component: HomeComponent},
-    {path: 'technologies', component: HomeComponent},
+    {path: 'technologies', component: TechnologiesComponent},
     {path: 'references', component: ReferencesComponent},
     {path: 'contact', component: ContactComponent},
     {path: 'impress', component: ImpressComponent},

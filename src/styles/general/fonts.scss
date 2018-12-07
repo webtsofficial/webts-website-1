@@ -39,10 +39,21 @@ h6 {
   text-align: center;
 }
 
-// Paragraphs -----------------------------
-p {
+// Paragraphs + Links -----------------------------
+p,a {
   font-weight: 300;
   font-size: 1.5rem;
+  line-height: 1.9rem;
+}
+
+a {
+  text-decoration: none;
+  color: $color-blue-mid;
+  @include transition(color, .3s, ease-in-out);
+
+  &:hover {
+    color: $color-blue-dark;
+  }
 }
 
 @include media_mobile() {

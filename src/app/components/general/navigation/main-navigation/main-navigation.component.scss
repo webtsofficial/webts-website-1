@@ -1,0 +1,40 @@
+@import "../../../../../styles/variables/colors";
+@import "../../../../../styles/variables/fonts";
+@import "../../../../../styles/mixins/flex";
+
+header {
+  nav {
+    ul {
+      @include flexbox();
+      @include flex-direction(row);
+      @include justify-content(space-between);
+      @include align-items(center);
+
+      li {
+        @include flex-grow(1);
+        text-align: center;
+
+        a {
+          display: block;
+          width: 100%;
+          padding: 18px 0;
+          background-color: $color-blue-dark;
+          font-family: $font-bungee;
+          color: $color-white;
+
+          &.active, &:hover {
+            color: $color-orange;
+          }
+
+          &.logo-link {
+            padding: 8px 0;
+            img {
+              height: 35px;
+              width: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
