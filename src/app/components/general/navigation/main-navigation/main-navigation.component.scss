@@ -19,7 +19,8 @@ header {
           width: 100%;
           padding: 18px 0;
           background-color: $color-blue-dark;
-          font-family: $font-bungee;
+          font-family: $font-roboto-mono;
+          font-weight: 700;
           color: $color-white;
 
           &.active, &:hover {
